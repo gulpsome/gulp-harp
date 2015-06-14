@@ -1,4 +1,5 @@
 import {pollen} from 'stamina'
+import path from 'path'
 import harp from 'harp'
 import sync from 'browser-sync'
 let reload = sync.reload
@@ -10,7 +11,7 @@ function pollinate(o) {
   if (o.harp.sync) anthers.push('harp-sync')
   anthers.push(o)
   // harp options
-  return pollen(anthers)
+  return pollen(anthers, path.normalize('./index.json'))
 }
 
 export default function(gulp, opts) {
