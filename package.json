@@ -38,8 +38,8 @@
   },
   "licenses": [
     {
-      "type": "Unlicense",
-      "url": "http://unlicense.org/"
+      "type": "MIT",
+      "url": "http://orlin.mit-license.org"
     }
   ]
 }
