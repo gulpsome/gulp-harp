@@ -6,6 +6,11 @@ Compass is out of scope, though there will be a solution.
 
 Documentation coming soon...
 
+## Dependencies
+
+[![Dependency Status](https://david-dm.org/orlin/gulp-harp.svg)](https://david-dm.org/orlin/gulp-harp)
+[![devDependency Status](https://david-dm.org/orlin/gulp-harp/dev-status.svg)](https://david-dm.org/orlin/gulp-harp#info=devDependencies)
+
 ## License
 
 [MIT](http://orlin.mit-license.org)

@@ -34,7 +34,6 @@
   },
   "scripts": {
     "build": "node_modules/.bin/babel index.js -o index.es5.js --source-maps inline --loose es6.modules",
-    "build:watch": "npm run build -- -w",
     "test": "node_modules/.bin/beverage -h -o"
   },
   "license": "MIT"
