@@ -4,7 +4,7 @@ import harp from 'harp'
 import sync from 'browser-sync'
 let reload = sync.reload
 
-function pollinate(o) {
+function pollinate (o) {
   if (!o.harp) return {}
   // infer what pollen is wanted
   let anthers = ['harp']
@@ -14,7 +14,7 @@ function pollinate(o) {
   return pollen(anthers, path.normalize('./index.json'))
 }
 
-export default function(gulp, opts) {
+export default function (gulp, opts) {
   let ho = pollinate(opts).harp
 
   gulp.task(ho.name, ho.help, () => {

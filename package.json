@@ -17,18 +17,19 @@
   "author": "Orlin M Bozhinov <om@soundsapiens.com>",
   "main": "index.es5.js",
   "dependencies": {
-    "browser-sync": "^2.7.10",
+    "browser-sync": "^2.7.12",
     "harp": "^0.17.0",
-    "ramda": "^0.14.0",
+    "ramda": "^0.15.0",
     "source-map-support": "^0.3.1",
     "sourcegate": "^0.1.3",
-    "stamina": "0.0.2"
+    "stamina": "0.0.3"
   },
   "devDependencies": {
     "babel": "^5.5.8",
-    "babel-eslint": "^3.1.15",
+    "babel-eslint": "^3.1.17",
     "beverage": "0.0.3",
-    "eslint": "^0.22.1",
+    "eslint": "^0.23.0",
+    "eslint-config-standard": "^3.3.0",
     "gulp": "^3.9.0"
   },
   "scripts": {
@@ -36,10 +37,5 @@
     "build:watch": "npm run build -- -w",
     "test": "node_modules/.bin/beverage -h -o"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://orlin.mit-license.org"
-    }
-  ]
+  "license": "MIT"
 }
