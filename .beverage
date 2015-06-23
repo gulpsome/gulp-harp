@@ -5,6 +5,6 @@
     }
   },
   "test": {},
-  "causality": {"build": ["index.js"]},
+  "causality": ["build", ["index.js"]],
   "sourcegate": [{"recipe": "eslint", "sources": {"extends": ["standard"]}}]
 }
