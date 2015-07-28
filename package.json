@@ -31,7 +31,6 @@
     "eslint": "^0.23.0",
     "eslint-config-standard": "^3.3.0",
     "gulp": "^3.9.0",
-    "gulp-npm-run": "0.0.1",
     "gulp-npm-test": "0.0.2"
   },
   "scripts": {
