@@ -1,19 +1,20 @@
-import {pollen} from 'stamina'
+import {pollen} from 'be-goods'
+import path from 'path'
 import harp from 'harp'
 import sync from 'browser-sync'
 let reload = sync.reload
 
-function pollinate(o) {
+function pollinate (o) {
   if (!o.harp) return {}
   // infer what pollen is wanted
   let anthers = ['harp']
   if (o.harp.sync) anthers.push('harp-sync')
   anthers.push(o)
   // harp options
-  return pollen(anthers)
+  return pollen(anthers, path.normalize('./index.json'))
 }
 
-export default function(gulp, opts) {
+export default function (gulp, opts) {
   let ho = pollinate(opts).harp
 
   gulp.task(ho.name, ho.help, () => {

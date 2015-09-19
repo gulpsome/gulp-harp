@@ -1,0 +1,21 @@
+{
+  "harp": {
+    "harp": {
+      "name": "harp",
+      "help": "Harp server",
+      "port": 9000
+    }
+  },
+  "harp-sync": {
+    "harp": {
+      "help": "Harp server & browser-sync",
+      "sync": {
+        "options": {
+          "proxy": "localhost:9000",
+          "open": false,
+          "notify": false
+        }
+      }
+    }
+  }
+}
