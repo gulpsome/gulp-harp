@@ -1,4 +1,4 @@
-import {pollen} from 'stamina'
+import {pollen} from 'be-goods'
 import path from 'path'
 import harp from 'harp'
 import sync from 'browser-sync'
