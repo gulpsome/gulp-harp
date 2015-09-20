@@ -11,7 +11,7 @@ function pollinate (o) {
   if (o.harp.sync) anthers.push('harp-sync')
   anthers.push(o)
   // harp options
-  return pollen(anthers, path.normalize('./index.json'))
+  return pollen(anthers, path.join(__dirname, 'index.json'))
 }
 
 export default function (gulp, opts) {
