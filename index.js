@@ -1,8 +1,8 @@
-import {pollen} from 'be-goods'
+import {myRequire, pollen} from 'be-goods'
 import path from 'path'
-import harp from 'harp'
 import sync from 'browser-sync'
 let reload = sync.reload
+let harp = myRequire('harp')
 
 function pollinate (o) {
   if (!o.harp) return {}
