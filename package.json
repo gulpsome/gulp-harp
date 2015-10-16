@@ -12,7 +12,7 @@
   "version": "0.0.2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/orlin/gulp-harp.git"
+    "url": "git@github.com:gulpsome/gulp-harp.git"
   },
   "author": "Orlin M Bozhinov <om@soundsapiens.com>",
   "main": "index.es5.js",
