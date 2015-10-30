@@ -27,8 +27,7 @@
     "beverage": "0.0.4",
     "eslint": "^1.5.1",
     "eslint-config-standard": "^4.4.0",
-    "gulp": "^3.9.0",
-    "gulp-npm-test": "0.0.2-1"
+    "gulp": "^3.9.0"
   },
   "scripts": {
     "build": "node_modules/.bin/babel index.js -o index.es5.js --source-maps inline --loose es6.modules",
