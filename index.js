@@ -14,7 +14,7 @@ function pollinate (o) {
   return pollen(anthers, path.join(__dirname, 'index.json'))
 }
 
-export default function (gulp, opts) {
+module.exports = function (gulp, opts) {
   let ho = pollinate(opts).harp
 
   gulp.task(ho.name, ho.help, () => {
