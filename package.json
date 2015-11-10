@@ -1,15 +1,16 @@
 {
   "name": "gulp-harp",
-  "description": "harp server with browser-sync reload for gulp workflow",
+  "description": "harp server with browser-sync reload for gulp / beverage workflow",
   "keywords": [
     "gulp",
     "harp",
     "static",
     "webdev",
+    "beverage",
     "workflow",
     "browser-sync"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git@github.com:gulpsome/gulp-harp.git"
