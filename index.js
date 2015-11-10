@@ -10,12 +10,16 @@ function pollinate (o) {
   let anthers = ['harp']
   if (o.harp.sync) anthers.push('harp-sync')
   anthers.push(o)
-  // harp options
   return pollen(anthers, path.join(__dirname, 'index.json'))
 }
 
-export default function (gulp, opts) {
-  let ho = pollinate(opts).harp
+// Options are keyed as "harp", for beverage compatibility.
+function options (o) {
+  return pollinate(o.hasOwnProperty('harp') ? o : {harp: o}).harp
+}
+
+module.exports = function (gulp, o) {
+  let ho = options(o)
 
   gulp.task(ho.name, ho.help, () => {
     harp.server(ho.path || process.cwd(), {
