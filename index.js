@@ -5,11 +5,9 @@ let reload = sync.reload
 let harp = myRequire('harp')
 
 function pollinate (o) {
-  if (!o.harp) return {}
-  // infer what pollen is wanted
-  let anthers = ['harp']
-  if (o.harp.sync) anthers.push('harp-sync')
-  anthers.push(o)
+  let anthers = ['harp'] // there's always harp here
+  if (o.harp.sync) anthers.push('harp-sync') // sync is optional
+  anthers.push(o) // finally, push the given options to be merged last
   return pollen(anthers, path.join(__dirname, 'index.json'))
 }
 
