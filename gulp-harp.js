@@ -21,7 +21,7 @@ function pollinate (o) {
   let anthers = ['harp'] // there's always harp here
   if (o.harp.sync) anthers.push('harp-sync') // sync is optional
   anthers.push(o) // finally, push the given options to be merged last
-  return pollen(anthers, path.join(__dirname, 'index.json'))
+  return pollen(anthers, path.join(__dirname, 'gulp-harp.json'))
 }
 
 // Options are keyed as "harp", for beverage compatibility.

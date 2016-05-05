@@ -2,7 +2,10 @@
 
 Successor of [statica](https://github.com/orlin/statica).
 Reloads with [browser-sync](http://www.browsersync.io).
-Compass is out of scope, though there's a solution.
+
+Compass is out of scope in this module, though there is
+[an example](https://github.com/gulpsome/gulp-harp#examples)
+that compiles with Ruby Compass, with seamless workflow.
 
 ## Use
 
@@ -16,9 +19,11 @@ var gulp = require('gulp-harp')(require('gulp'), {
 });
 ```
 
+You will have to install `gulp`, `harp`, and `gulp-harp` as dependencies (better `devDependencies`) or will be reminded about it anyway.
+
 ### Options
 
-The options could be:
+Here are some options for example:
 
 ```javascript
 { "name": "serve", // the gulp task name
@@ -38,7 +43,9 @@ The options could be:
 }
 ```
 
-### Example
+If you look at the defaults in `gulp-harp.json`, please note that the structure is slightly different, so don't get mislead to copy from it verbatim.
+
+### Examples
 
 See gulp-harp in use by [astrolet.co](https://github.com/astrolet/astrolet.co) and soon other projects.
 
