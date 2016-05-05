@@ -3,9 +3,7 @@
 Successor of [statica](https://github.com/orlin/statica).
 Reloads with [browser-sync](http://www.browsersync.io).
 
-Compass is out of scope in this module, though there is
-[an example](https://github.com/gulpsome/gulp-harp#examples)
-that compiles with Ruby Compass, with seamless workflow.
+Compass.rb is out of scope here, this being a Node.js module, though there is [an example](https://github.com/astrolet/astrolet.co) demonstrating seamless workflow.
 
 ## Use
 
@@ -47,7 +45,7 @@ If you look at the defaults in `gulp-harp.json`, please note that the structure 
 
 ### Examples
 
-See gulp-harp in use by [astrolet.co](https://github.com/astrolet/astrolet.co) and soon other projects.
+See this deployed [astrolet.co](https://github.com/astrolet/astrolet.co) site for demo / source code example.
 
 ## Develop [![Dependency Status](https://david-dm.org/gulpsome/gulp-harp.svg)](https://david-dm.org/gulpsome/gulp-harp) [![devDependency Status](https://david-dm.org/gulpsome/gulp-harp/dev-status.svg)](https://david-dm.org/gulpsome/gulp-harp#info=devDependencies)
 

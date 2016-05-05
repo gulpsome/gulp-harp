@@ -11,7 +11,7 @@
     "browser-sync",
     "gulpfriendly"
   ],
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "git@github.com:gulpsome/gulp-harp.git"
@@ -19,7 +19,7 @@
   "author": "Orlin M Bozhinov <om@soundsapiens.com>",
   "main": "gulp-harp.es5.js",
   "dependencies": {
-    "be-goods": "0.0.8",
+    "be-goods": "0.0.9",
     "browser-sync": "^2.12.5",
     "source-map-support": "^0.4.0",
     "sourcegate": "^0.1.4"
