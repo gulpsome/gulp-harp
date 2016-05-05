@@ -1,16 +1,27 @@
-import {myRequire, pollen} from 'be-goods'
+import {prefquire} from 'be-goods'
 import path from 'path'
 import sync from 'browser-sync'
+import sourcegate from 'sourcegate'
+
+// NOTE: gulp-harp is a dependency of the project using this
+let harp = prefquire({forceLocal: true})('harp')
 let reload = sync.reload
-let harp = myRequire('harp')
+
+// This came from gulpsome/be-goods where there was a `pollen.json`...
+// The json moved here and since there are no other use-cases, so did the code too.
+function pollen (anthers, where) {
+  let flaments = require(where) // || path.normalize('pollen.json')
+  let got = anthers.map(select => {
+    return typeof select === 'string' ? flaments[select] : select // object assumed
+  })
+  return sourcegate(got)
+}
 
 function pollinate (o) {
-  if (!o.harp) return {}
-  // infer what pollen is wanted
-  let anthers = ['harp']
-  if (o.harp.sync) anthers.push('harp-sync')
-  anthers.push(o)
-  return pollen(anthers, path.join(__dirname, 'index.json'))
+  let anthers = ['harp'] // there's always harp here
+  if (o.harp.sync) anthers.push('harp-sync') // sync is optional
+  anthers.push(o) // finally, push the given options to be merged last
+  return pollen(anthers, path.join(__dirname, 'gulp-harp.json'))
 }
 
 // Options are keyed as "harp", for beverage compatibility.
