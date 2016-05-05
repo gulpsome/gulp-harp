@@ -17,7 +17,7 @@
     "url": "git@github.com:gulpsome/gulp-harp.git"
   },
   "author": "Orlin M Bozhinov <om@soundsapiens.com>",
-  "main": "index.es5.js",
+  "main": "gulp-harp.es5.js",
   "dependencies": {
     "be-goods": "0.0.8",
     "browser-sync": "^2.12.5",
@@ -36,7 +36,7 @@
     "gulp": "^3.9.1"
   },
   "scripts": {
-    "build": "node_modules/.bin/babel index.js -o index.es5.js --source-maps inline",
+    "build": "node_modules/.bin/babel gulp-harp.js -o gulp-harp.es5.js --source-maps inline",
     "build:watch": "npm run build -- -w",
     "test": "node_modules/.bin/beverage -h -o"
   },
