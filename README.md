@@ -8,7 +8,7 @@ Compass is out of scope, though there's a solution.
 
 [![NPM](https://nodei.co/npm/gulp-harp.png?mini=true)](https://www.npmjs.org/package/gulp-harp)
 
-Best used with [beverage](https://github.com/gulpsome/beverage) though it works fine just with `gulp`.
+Best used with [beverage](https://github.com/gulpsome/beverage) though it works fine just with `gulp`.  In either case, here is an example `gulpfile.js`:
 
 ```javascript
 var gulp = require('gulp-harp')(require('gulp'), {
