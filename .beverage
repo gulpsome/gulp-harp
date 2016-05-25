@@ -1,9 +1,9 @@
 {
   "scripts": {
     "include": {
-      "build": "index.es5.js"
+      "build": "gulp-harp.es5.js"
     }
   },
-  "causality": ["build", ["index.js"]],
+  "causality": ["build", ["gulp-harp.js"]],
   "sourcegate": [{"recipe": "eslint", "sources": {"extends": ["standard"]}}]
 }

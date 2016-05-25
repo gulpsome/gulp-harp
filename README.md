@@ -12,8 +12,10 @@ Compass.rb is out of scope here, this being a Node.js module, though there is [a
 Best used with [beverage](https://github.com/gulpsome/beverage) though it works fine just with `gulp`.  In either case, here is an example `gulpfile.js`:
 
 ```javascript
-var gulp = require('gulp-harp')(require('gulp'), {
-  // options
+var gulp = require('beverage')(require('gulp'), {
+  "harp": {
+    // options
+  }
 });
 ```
 
